@@ -1,0 +1,40 @@
+// // Create a context to manage user data
+// import React, { createContext, useContext, useState } from 'react';
+
+// const UserContext = createContext();
+
+// export const useUserContext = () => {
+//   return useContext(UserContext);
+// };
+
+// export const UserProvider = ({ children }) => {
+//   const [userData, setUserData] = useState(() => {
+//     return JSON.parse(localStorage.getItem('Users')) || [];
+//   });
+
+//   const addUser = (user) => {
+//     setUserData([...userData, user]);
+//     localStorage.setItem('Users', JSON.stringify([...userData, user]));
+//   };
+
+//   const updateUser = (index, user) => {
+//     const updatedUsers = [...userData];
+//     updatedUsers[index] = user;
+//     setUserData(updatedUsers);
+//     localStorage.setItem('Users', JSON.stringify(updatedUsers));
+//   };
+
+//   const deleteUser = (index) => {
+//     const updatedUsers = [...userData];
+//     updatedUsers.splice(index, 1);
+//     setUserData(updatedUsers);
+//     localStorage.setItem('Users', JSON.stringify(updatedUsers));
+//   };
+
+//   return (
+//     // <UserContext.Provider value={{ userData, addUser, updateUser, deleteUser }}>
+//     //   {children}
+//     // </UserContext.Provider>
+//     <></>
+//   );
+// };
